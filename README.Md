@@ -3,6 +3,7 @@
 npm install editor-js-parser
 ```
 editor-js-parser is tool to convert json data to html from [editorjs](https://editorjs.io/).
+<br/>
 suported component
 1. checklist
 2. embed
