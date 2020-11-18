@@ -18,7 +18,7 @@ for styling **quote** and **checklist** we use bootstrap so make sure you have i
 
 ## example
 ```javascript
-import Parser from 'editor-js-parser'
+import Parser from '@son_xx/editor-js-parser'
 const data = {
     time: 1605667704216, 
     version: "2.19.0"}
