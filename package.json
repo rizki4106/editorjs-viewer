@@ -1,5 +1,5 @@
 {
-  "name": "editor-js-parser",
+  "name": "@son_xx/editor-js-parser",
   "version": "1.0.2",
   "description": "easy change json data to html from editorjs",
   "main": "index.js",
