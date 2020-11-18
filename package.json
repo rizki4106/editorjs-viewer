@@ -1,0 +1,29 @@
+{
+  "name": "editor-js-parser",
+  "version": "1.0.0",
+  "description": "easy change json data to html from editorjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizki4106/editor-js-parser.git"
+  },
+  "keywords": [
+    "editorjs",
+    "parser",
+    "editorjs-parser",
+    "editor-html-parser",
+    "editor-js-parser"
+  ],
+  "author": "rizkimaulana348@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rizki4106/editor-js-parser/issues"
+  },
+  "homepage": "https://github.com/rizki4106/editor-js-parser#readme",
+  "engines": {
+    "node": ">=12.18.2"
+  }
+}
