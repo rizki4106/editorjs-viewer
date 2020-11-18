@@ -1,6 +1,6 @@
 # editor-js-parser
 ```bash
-npm install editor-js-parser
+npm install @son_xx/editor-js-parser
 ```
 editor-js-parser is tool to convert json data to html from [editorjs](https://editorjs.io/).
 <br/>
