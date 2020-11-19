@@ -13,28 +13,40 @@ let value = ''
 
 const parser = (val) => {
     value = ''
-    val.forEach((items) => {
-        switch(items.type){
-            case "paragraph":
-                value += paragraph(items.data.text)
-            case "link":
-                value += link(items.data.link)
-            case "header":
-                value += head(items.data.text, items.data.level)
-            case "list":
-                value += list(items.data.items)
-            case "raw":
-                value += raw(items.data.html)
-            case "quote":
-                value += quote(items.data.caption, items.data.text)
-            case "checklist":
-                value += checklist(items.data.items)
-            case "embed":
-                value += embed(items.data)
-            default:
-                value += ''
-        }
-    })
+    try{
+        val.forEach((items) => {
+            switch(items.type){
+                case "paragraph":
+                    value += paragraph(items.data.text)
+                    break;
+                case "link":
+                    value += link(items.data.link)
+                    break;
+                case "header":
+                    value += head(items.data.text, items.data.level)
+                    break;
+                case "list":
+                    value += list(items.data.items)
+                    break;
+                case "raw":
+                    value += raw(items.data.html)
+                    break;
+                case "quote":
+                    value += quote(items.data.caption, items.data.text)
+                    break;
+                case "checklist":
+                    value += checklist(items.data.items)
+                    break;
+                case "embed":
+                    value += embed(items.data)
+                    break;
+                default:
+                    value += ''
+            }
+        })
+    }catch(err){
+        // 
+    }
     return value
 }
 module.exports = parser
