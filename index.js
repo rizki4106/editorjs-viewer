@@ -14,22 +14,25 @@ let value = ''
 const parser = (val) => {
     value = ''
     val.forEach((items) => {
-        if(items.type === "paragraph"){
-            value += paragraph(items.data.text)
-        }else if(items.type === "link"){
-            value += link(items.data.link)
-        }else if(items.type === "header"){
-            value += head(items.data.text, items.data.level)
-        }else if(items.type === "list"){
-            value += list(items.data.items)
-        }else if(items.type === "raw"){
-            value += raw(items.data.html)
-        }else if(items.type === "quote"){
-            value += quote(items.data.caption, items.data.text)
-        }else if(items.type === "checklist"){
-            value += checklist(items.data.items)
-        }else if(items.type === "embed"){
-            value += embed(items.data)
+        switch(items.type){
+            case "paragraph":
+                value += paragraph(items.data.text)
+            case "link":
+                value += link(items.data.link)
+            case "header":
+                value += head(items.data.text, items.data.level)
+            case "list":
+                value += list(items.data.items)
+            case "raw":
+                value += raw(items.data.html)
+            case "quote":
+                value += quote(items.data.caption, items.data.text)
+            case "checklist":
+                value += checklist(items.data.items)
+            case "embed":
+                value += embed(items.data)
+            default:
+                value += ''
         }
     })
     return value
