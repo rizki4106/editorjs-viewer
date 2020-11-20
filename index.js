@@ -4,7 +4,8 @@ const {
     head,
     list,
     quote,
-    checklist
+    checklist,
+    Image
 } = require('./component')
 const embed = require('./embed')
 const raw = require('./raw')
@@ -12,6 +13,7 @@ const raw = require('./raw')
 let value = ''
 
 const parser = (val) => {
+    console.log(val)
     value = ''
     try{
         val.forEach((items) => {
@@ -39,6 +41,9 @@ const parser = (val) => {
                     break;
                 case "embed":
                     value += embed(items.data)
+                    break;
+                case "image":
+                    value += Image(items.data)
                     break;
                 default:
                     value += ''

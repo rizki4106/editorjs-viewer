@@ -6,6 +6,7 @@ import raw from './raw'
 import quote from './quote'
 import checklist from './checklist'
 import embed from './embed'
+import Image from './image'
 
 export {
     paragraph,
@@ -15,5 +16,6 @@ export {
     raw,
     quote,
     checklist,
-    embed
+    embed,
+    Image
 }
