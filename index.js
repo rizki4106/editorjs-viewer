@@ -6,7 +6,8 @@ const {
     quote,
     checklist,
     image,
-    table
+    table,
+    code
 } = require('./component')
 const embed = require('./embed')
 const raw = require('./raw')
@@ -47,6 +48,10 @@ const parser = (val) => {
                     break;
                 case "table":
                     value += table(items)
+                    break;
+                case "code":
+                    value += code(items)
+                    break;
                 default:
                     value += ''
             }

@@ -8,6 +8,7 @@ import checklist from './checklist'
 import embed from './embed'
 import image from './image'
 import table from './table'
+import code from './code'
 
 export {
     paragraph,
@@ -19,5 +20,6 @@ export {
     checklist,
     embed,
     image,
-    table
+    table,
+    code
 }
