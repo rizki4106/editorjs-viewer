@@ -4,7 +4,7 @@
 npm install editorjs-viewer
 ```
 
-editor-js-parser is tool to convert json data to html from [editorjs](https://editorjs.io/).
+editorjs-viewer is tool to convert json data to html from [editorjs](https://editorjs.io/).
 <br/>
 suported component
 
