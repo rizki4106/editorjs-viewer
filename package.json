@@ -1,6 +1,6 @@
 {
-  "name": "@son_xx/editor-js-parser",
-  "version": "1.0.7",
+  "name": "editorjs-viewer",
+  "version": "0.0.1",
   "description": "easy change json data to html from editorjs",
   "main": "index.js",
   "scripts": {
