@@ -13,7 +13,6 @@ const raw = require('./raw')
 let value = ''
 
 const parser = (val) => {
-    console.log(val)
     value = ''
     try{
         val.forEach((items) => {
