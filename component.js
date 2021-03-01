@@ -6,7 +6,8 @@ import raw from './raw'
 import quote from './quote'
 import checklist from './checklist'
 import embed from './embed'
-import Image from './image'
+import image from './image'
+import table from './table'
 
 export {
     paragraph,
@@ -17,5 +18,6 @@ export {
     quote,
     checklist,
     embed,
-    Image
+    image,
+    table
 }

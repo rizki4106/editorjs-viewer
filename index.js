@@ -5,7 +5,8 @@ const {
     list,
     quote,
     checklist,
-    Image
+    image,
+    table
 } = require('./component')
 const embed = require('./embed')
 const raw = require('./raw')
@@ -42,8 +43,10 @@ const parser = (val) => {
                     value += embed(items.data)
                     break;
                 case "image":
-                    value += Image(items.data)
+                    value += image(items.data)
                     break;
+                case "table":
+                    value += table(items)
                 default:
                     value += ''
             }
