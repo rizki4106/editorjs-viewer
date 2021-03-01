@@ -7,10 +7,11 @@ const {
     checklist,
     image,
     table,
-    code
+    code,
+    raw,
+    embed,
+    warning
 } = require('./component')
-const embed = require('./embed')
-const raw = require('./raw')
 
 let value = ''
 
@@ -51,6 +52,9 @@ const parser = (val) => {
                     break;
                 case "code":
                     value += code(items)
+                    break;
+                case "warning":
+                    value += warning(items.data)
                     break;
                 default:
                     value += ''

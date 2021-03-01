@@ -9,6 +9,7 @@ import embed from './embed'
 import image from './image'
 import table from './table'
 import code from './code'
+import warning from './warning'
 
 export {
     paragraph,
@@ -21,5 +22,6 @@ export {
     embed,
     image,
     table,
-    code
+    code,
+    warning
 }
