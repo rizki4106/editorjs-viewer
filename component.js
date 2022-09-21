@@ -1,17 +1,17 @@
-import paragraph from './paragraph'
-import link from './link'
-import head from './head'
-import list from './list'
-import raw from './raw'
-import quote from './quote'
-import checklist from './checklist'
-import embed from './embed'
-import image from './image'
-import table from './table'
-import code from './code'
-import warning from './warning'
+const paragraph = require('./paragraph')
+const link = require('./link')
+const head = require('./head')
+const list = require('./list')
+const raw = require('./raw')
+const quote = require('./quote')
+const checklist = require('./checklist')
+const embed = require('./embed')
+const image = require('./image')
+const table = require('./table')
+const code = require('./code')
+const warning = require('./warning')
 
-export {
+module.exports =  {
     paragraph,
     link,
     head,

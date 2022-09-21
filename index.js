@@ -15,7 +15,7 @@ const {
 
 let value = ''
 
-const parser = (val) => {
+const renderHTML = (val) => {
     value = ''
     try{
         val.forEach((items) => {
@@ -65,4 +65,5 @@ const parser = (val) => {
     }
     return value
 }
-module.exports = parser
+
+module.exports = { renderHTML }
