@@ -23,8 +23,8 @@ const renderHTML = (val) => {
                 case "paragraph":
                     value += paragraph(items.data.text)
                     break;
-                case "link":
-                    value += link(items.data.link)
+                case "linkTool":
+                    value += link(items.data)
                     break;
                 case "Header":
                     value += head(items.data.text, items.data.level)
