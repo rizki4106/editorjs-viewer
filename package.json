@@ -1,6 +1,6 @@
 {
   "name": "editorjs-viewer",
-  "version": "0.0.1",
+  "version": "1.0.3",
   "description": "easy change json data to html from editorjs",
   "main": "index.js",
   "scripts": {
