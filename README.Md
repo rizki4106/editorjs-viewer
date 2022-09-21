@@ -1,4 +1,4 @@
-# editor-js-parser
+# editorjs-viewer
 
 ```bash
 npm install editorjs-viewer
@@ -25,20 +25,24 @@ for styling **quote** and **checklist** we use bootstrap so make sure you have i
 ## example
 
 ```javascript
-import Parser from 'editorjs-viewer'
+import { renderHTML } from 'editorjs-viewer'
 const data = {
     time: 1605667704216,
-    version: "2.19.0"}
-    blocks: Array(1)
-        0:{
-            data: {text: "header example",level: 2}
+    version: "2.19.0"
+    blocks: [
+        {
+            data: {
+                text: "header example",
+                level: 2
+            }
             type: "header"
         }
+    ]
     time: 1605667704216
     version: "2.19.0"
 }
 
-const result = Parser(data.blocks)
+const result = renderHTML(data.blocks)
 console.log(result)
 // outout
 // <h2>header example</h2>
