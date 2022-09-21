@@ -26,7 +26,7 @@ const renderHTML = (val) => {
                 case "link":
                     value += link(items.data.link)
                     break;
-                case "header":
+                case "Header":
                     value += head(items.data.text, items.data.level)
                     break;
                 case "list":
