@@ -1,11 +1,11 @@
 {
   "name": "editorjs-viewer",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Extremly easy turn JSON data to HTML from editor.js dynamicly",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build" : "tsc"
+    "build" : "tsc && tsc index.ts"
   },
   "repository": {
     "type": "git",

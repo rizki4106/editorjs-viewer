@@ -1,9 +1,6 @@
 // data types
 import {Block, Elements} from './type'
 
-// default value
-import { configuration } from './default'
-
 /**
  * This class used to turn json data to HTML data with the following steps
  * 1. take the block data that returned from editorjs value
@@ -64,6 +61,4 @@ class Parser {
 
 }
 
-const parser = new Parser(configuration)
-
-export {parser}
+export default Parser
