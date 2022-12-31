@@ -13,8 +13,16 @@ const configuration : Elements = {
                     return `<h1>${value.data.text}</h1>`
                 case 2:
                     return `<h2>${value.data.text}</h2>`
+                case 3:
+                    return `<h3>${value.data.text}</h3>`
+                case 4:
+                    return `<h4>${value.data.text}</h4>`
+                case 5:
+                    return `<h5>${value.data.text}</h5>`
+                case 6:
+                    return `<h6>${value.data.text}</h6>`
                 default:
-                    return ''
+                    return `<h1>${value.data.text}</h1>`
             }
         },
     }
