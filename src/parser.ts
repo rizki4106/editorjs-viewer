@@ -12,7 +12,6 @@ import {Block, Elements} from './type'
 
 class Parser {
 
-    protected result : string[] = []
     protected conf : Elements = {}
 
     constructor(conf : Elements){
@@ -41,7 +40,10 @@ class Parser {
      * @param {Block[]} blocks -> array of block from return value editor.js
      * @param {Elements} config -> tag configuration see the docummentation
      */
-    public toHTML(blocks : Block[], config?: Elements) : string{
+    toHTML(blocks : Block[], config?: Elements) : string{
+
+        // define result variable
+        let result : string[] = []
 
         // if user send argument config then update the existing config with the new one
         if(config !== undefined){
@@ -50,12 +52,12 @@ class Parser {
 
         // loop to all of the editor block
         blocks.forEach((items : Block) => {
-            this.result.push(this.conf[items.type].onReturn(items))
+            result.push(this.conf[items.type].onReturn(items))
         })
 
         // return parsed html to the user
 
-        return this.result.join("")
+        return result.join("")
 
     }
 
