@@ -10,7 +10,6 @@ exports.__esModule = true;
  */
 var Parser = /** @class */ (function () {
     function Parser(conf) {
-        this.result = [];
         this.conf = {};
         this.conf = conf;
     }
@@ -36,16 +35,18 @@ var Parser = /** @class */ (function () {
      */
     Parser.prototype.toHTML = function (blocks, config) {
         var _this = this;
+        // define result variable
+        var result = [];
         // if user send argument config then update the existing config with the new one
         if (config !== undefined) {
             this.checkConfig(config);
         }
         // loop to all of the editor block
         blocks.forEach(function (items) {
-            _this.result.push(_this.conf[items.type].onReturn(items));
+            result.push(_this.conf[items.type].onReturn(items));
         });
         // return parsed html to the user
-        return this.result.join("");
+        return result.join("");
     };
     return Parser;
 }());

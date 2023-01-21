@@ -40,7 +40,7 @@ class Parser {
      * @param {Block[]} blocks -> array of block from return value editor.js
      * @param {Elements} config -> tag configuration see the docummentation
      */
-    toHTML(blocks : Block[], config?: Elements) : string{
+    public toHTML(blocks : Block[], config?: Elements) : string{
 
         // define result variable
         let result : string[] = []

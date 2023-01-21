@@ -8,7 +8,6 @@ import { Block, Elements } from './type';
  * 5. parse to html using `toHTML()` method then return it to the user
  */
 declare class Parser {
-    protected result: string[];
     protected conf: Elements;
     constructor(conf: Elements);
     /**
